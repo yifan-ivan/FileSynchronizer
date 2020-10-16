@@ -3,6 +3,7 @@ import time
 import yaml
 from watchdog.observers import Observer
 from watchdog.events import *
+import ftplib
 
 config_file = "client.yml"
 
@@ -15,6 +16,9 @@ class MyHandler(FileSystemEventHandler):
         files = get_config("files")
         if event.src_path.replace("./", "") in files:
             print("log file %s changed!" % event.src_path)
+            session = ftplib.FTP(get_config("server_ip"), get_config("user_name"), get_config("password"))
+            file = open(event.src_path, "rb")
+            session.storbinary(f"STOR {event.src_path}", file)
 
 if __name__ == "__main__":
     print("Monitored Files: " + str(get_config("files")))

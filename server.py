@@ -13,7 +13,7 @@ def get_config(index):
 if __name__ == "__main__":
     authorizer = DummyAuthorizer()
 
-    authorizer.add_user(get_config("user_name"), get_config("password"), ".", perm='elradfmwMT')
+    authorizer.add_user(get_config("user_name"), get_config("password"), get_config("storage_path"), perm='elradfmwMT')
     authorizer.add_anonymous(os.getcwd())
 
     handler = FTPHandler

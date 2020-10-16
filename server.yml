@@ -1,4 +1,4 @@
 user_name: "admin"
 password: "123456"
 
-files_path: "./files"
+storage_path: "./files"
