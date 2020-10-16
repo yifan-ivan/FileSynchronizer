@@ -21,6 +21,6 @@ if __name__ == "__main__":
 
     handler.banner = "File Synchronizer FTP Server Powered by pyftpdlib."
 
-    address = ("", 21)
+    address = ("", get_config("port"))
     server = FTPServer(address, handler)
     server.serve_forever()
