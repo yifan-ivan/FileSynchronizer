@@ -1,5 +1,7 @@
 # FileSynchronizer
 
+[English](https://github.com/yifan-ivan/FileSynchronizer/blob/master/README.md)
+
 一个简单的同步两台设备上文件的小程序。
 
 ## 依赖

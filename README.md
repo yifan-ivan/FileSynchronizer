@@ -1,5 +1,7 @@
 # FileSynchronizer
 
+[中文](https://github.com/yifan-ivan/FileSynchronizer/blob/master/README_cn.md)
+
 A simple app to sync files between two devices.
 
 ## Requirements
