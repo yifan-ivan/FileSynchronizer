@@ -1,0 +1,7 @@
+files:
+  - "test.txt"
+
+server_ip: 127.0.0.1
+server_port: 21
+user_name: "admin"
+password: "123456"
